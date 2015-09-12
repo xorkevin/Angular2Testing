@@ -4,7 +4,9 @@ import {Component, View} from 'angular2/angular2';
   selector: 'app'
 })
 @View({
-  template: '<h1>My First Angular2 App</h1>'
+  template: `
+    <h1>My First Angular2 App</h1>
+  `
 })
 class AppComponent {
 
