@@ -8,7 +8,9 @@ import {ROUTECONFIG} from './routeconfig';
 @View({
   template: `
     <h1>My First Angular2 App</h1>
-  `
+    <router-outlet></router-outlet>
+  `,
+  directives: [RouterOutlet]
 })
 @RouteConfig(ROUTECONFIG)
 class AppComponent {
