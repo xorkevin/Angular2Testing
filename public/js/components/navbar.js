@@ -1,4 +1,5 @@
 import {Component, View, NgFor} from 'angular2/angular2';
+import {RouterLink} from 'angular2/router';
 
 @Component({
   selector: 'navbar'
@@ -13,4 +14,6 @@ class Navbar {
 
 }
 
-export {Navbar};
+export {
+  Navbar
+};
