@@ -3,7 +3,7 @@ import {Component, View} from 'angular2/angular2';
 @Component({
   selector: 'about'
 })
-@view({
+@View({
   template: `
     <h1>About Us</h1>
     <p>
