@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/xorkevin/HackathonWebsite/issues"
   },
-  "homepage": "https://github.com/xorkevin/HackathonWebsite#readme"
+  "homepage": "https://github.com/xorkevin/HackathonWebsite#readme",
+  "devDependencies": {
+    "jspm": "^0.16.2",
+    "live-server": "^0.8.1"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "public"
+    },
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-alpha.37",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "core-js": "npm:core-js@^1.1.0"
+    }
+  }
 }
