@@ -1,6 +1,7 @@
 import {Component, View} from 'angular2/angular2';
 import {RouteConfig, RouterOutlet} from 'angular2/router';
-import {ROUTECONFIG} from './routeconfig';
+import {RouteStore} from './services/routestore';
+import {Navbar} from './components/navbar';
 
 @Component({
   selector: 'app'
@@ -8,11 +9,12 @@ import {ROUTECONFIG} from './routeconfig';
 @View({
   template: `
     <h1>My First Angular2 App</h1>
+    <navbar></navbar>
     <router-outlet></router-outlet>
   `,
-  //directives: [RouterOutlet]
+  directives: [Navbar]//RouterOutlet]
 })
-@RouteConfig(ROUTECONFIG)
+@RouteConfig(RouteStore.pages)
 class AppComponent {
   constructor() {
 
