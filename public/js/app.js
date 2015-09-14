@@ -14,7 +14,7 @@ import {Navbar} from './components/navbar';
   `,
   directives: [Navbar]//RouterOutlet]
 })
-@RouteConfig(RouteStore.pages)
+//@RouteConfig(RouteStore.pages)
 class AppComponent {
   constructor() {
 

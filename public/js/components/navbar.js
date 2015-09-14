@@ -1,11 +1,11 @@
-import {Component, View, NgFor} from 'angular2/angular2';
+import {Component, View, NgFor, Inject} from 'angular2/angular2';
 import {RouterLink} from 'angular2/router';
 import {RouteStore} from '../services/routestore';
 
 @Component({
-  selector: 'navbar',
-  componentServices: [RouteStore]
+  selector: 'navbar'
 })
+@Inject(RouteStore)
 @View({
   template: `
     <ul>
@@ -16,7 +16,8 @@ import {RouteStore} from '../services/routestore';
 })
 class Navbar {
   constructor(routeStore) {
-    this.pages = routeStore.pages;
+    console.log(routeStore);
+    this.pages = routeStore.getPages();
   }
 }
 
